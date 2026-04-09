@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center; /* vertical */
+  background: black;
+}
+
+.button {
+  width: min(200px, 90%);
+  height: 80px;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
