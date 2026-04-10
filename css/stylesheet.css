@@ -4,22 +4,54 @@
 }
 
 body {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center; /* horizontal */
-  align-items: center; /* vertical */
-  background: black;
+    margin: 0;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.button {
-  width: min(200px, 90%);
-  height: 80px;
-  background: white;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+svg{
   cursor: pointer;
-  font-size: 20px;
-  font-weight: bold;
+}
+
+.heart:hover {
+    transform-origin: center;
+    animation: beat 1.2s infinite;
+}
+
+.heart-live {
+    fill: url(#gradHeart);
+    stroke: #ff1a1a;
+    stroke-width: 1.2;
+}
+
+.g1 {
+    stop-color: #ff0000;
+    animation: grad1 2s infinite alternate;
+}
+
+.g2 {
+    stop-color: #8b0000;
+    animation: grad2 2s infinite alternate;
+}
+
+@keyframes beat {
+    0%   { transform: scale(1); }
+    15%  { transform: scale(1.12); }
+    30%  { transform: scale(1); }
+    45%  { transform: scale(1.18); }
+    60%  { transform: scale(1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes grad1 {
+    0% { stop-color: #ff0000; }
+    100% { stop-color: #ff4d4d; }
+}
+
+@keyframes grad2 {
+    0% { stop-color: #8b0000; }
+    100% { stop-color: #b30000; }
 }

@@ -3,15 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Love For You</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="icon" type="image/x-icon" href="pixil-frame-0(1).png">
+    <title>Meu Amor</title>
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="icon" href="../wwwroot/pixil-frame-0(1).png">
 </head>
 <body>
-    <button class="button">
-        Aperte aqui
-    </button>
+  <svg width="260" height="260" viewBox="0 0 24 24" class="heart">
+    
+    <defs>
+        <linearGradient id="gradHeart" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" class="g1"/>
+            <stop offset="100%" class="g2"/>
+        </linearGradient>
+    </defs>
+
+    <path 
+        d="M12 21c-2.5-2-8-5.5-8-10a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 11c0 4.5-5.5 8-8 10z"
+        class="heart-live"
+    />
+
+    <text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="1.5" font-family="Arial">
+        Clique em mim
+    </text>
+</svg>
+
 </body>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="JavaScript.Js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../javascript/JavaScript.Js"></script>
 </html>
