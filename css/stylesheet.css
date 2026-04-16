@@ -16,17 +16,13 @@ body {
     height: 100vh;
 }
 
-svg{
-  cursor: pointer;
-}
-
 .heart:hover {
     transform-origin: center;
     animation: beat 1.2s infinite;
 }
 
 .heart-live {
-    fill: url(#gradHeart);
+    fill: url(#grandHeart);
     stroke: #ff1a1a;
     stroke-width: 1.2;
 }
