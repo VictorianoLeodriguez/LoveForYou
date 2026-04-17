@@ -8,6 +8,6 @@ $(document).on("click", ".heart", function(e){
         opacity: 0.7
     });
     setTimeout(function(){
-        window.location.href = "../html/landingpage.html";
+        window.location.href = "../LoveForYou/html/landingpage.html";
     }, 500);
 });
